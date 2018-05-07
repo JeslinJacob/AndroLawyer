@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1Diary_lawyer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgcasediary_lawyer"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:onClick="openDiary"
+            android:src="@drawable/diary1" />
+
+        <TextView
+            android:id="@+id/txtcasediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Case Diary"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_sub_casediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Click Icon to view Diary"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_client_name_casediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Choose Client name :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3963DC"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_client_name_casediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_case_id_casediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Choose CaseID :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#9B2DE1"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner_case_id_casediary_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/date_casediary_lawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Double Click to enter &quot;Date&quot; "
+            android:onClick="mydate"
+            android:singleLine="true"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/desc_casediary_lawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Case Description"
+            android:inputType="textMultiLine"
+            android:textColorHint="#000000" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imgOK_casediary_lawyer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:onClick="okclk"
+            android:src="@drawable/ok" />
+    </LinearLayout>
+
+</ScrollView>

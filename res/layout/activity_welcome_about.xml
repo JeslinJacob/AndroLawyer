@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/ABTlove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Made with &lt;3 in India"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ABTlove"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="7dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_ct_techy_tile" />
+
+    <TextView
+        android:id="@+id/ABTTextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ABTTextView04"
+        android:gravity="center"
+        android:text="© 2016 Andro Lawyer Inc..\n All rights reserved."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ABTTextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ABTTextView03"
+        android:gravity="center"
+        android:text="e-mail: rahulrajendra@androlawyer.com"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ABTTextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ABTName"
+        android:gravity="center"
+        android:text="mob: 8606343801"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/ABTName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="Designed by: Rahul Rajendra"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/ABTimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ABTName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_about_large" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ABTimageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text="Version 1.48.0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="Andro Lawyer-Client App (ALC)"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="28sp" />
+
+</RelativeLayout>

@@ -1,0 +1,378 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1Lreg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <ImageView
+                android:id="@+id/imgLawyerLreg"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/lawyer" />
+
+            <TextView
+                android:id="@+id/txtlawyerLreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Lawyer Registration"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPDLreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:text="Personal Details"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/LNameLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/LDOBLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:hint="Double Click to enter &quot;DOB&quot; "
+                android:onClick="mydate"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/LUserLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Username"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/LPassLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="GenderCheck"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/LGenderMLreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="GenderCheck"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/LGenderFLreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:onClick="GenderCheck"
+                android:text="Female" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3" >
+
+            <ImageView
+                android:id="@+id/imgLreg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic1_addr" />
+
+            <EditText
+                android:id="@+id/addressLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Home / office Address"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/placeLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Place"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/cityLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="City"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/stateLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="State"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/countryLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Country"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <TextView
+                android:id="@+id/txtPLOTLreg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/locxy"
+                android:gravity="center_vertical"
+                android:onClick="MAP"
+                android:text="  Click here to Plot your location On map"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColorHint="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/txtLATLreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Latitude:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/LATLreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Click above..."
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/txtLNGLreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Longitude:"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/LNGLreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Click above..."
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgContactLreg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/contact" />
+
+            <EditText
+                android:id="@+id/LEmailLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Email address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <EditText
+                android:id="@+id/LPhnLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <ImageView
+                android:id="@+id/imgQualLreg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic1_qualif" />
+
+            <EditText
+                android:id="@+id/LQualLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Qualification Details"
+                android:singleLine="true"
+                android:textColorHint="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lregCTtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Select Case Types"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/lregCT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="1"
+                    android:text="Small Claims" />
+
+                <CheckBox
+                    android:id="@+id/lregCT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="2"
+                    android:text="Divorce or Separation" />
+
+                <CheckBox
+                    android:id="@+id/lregCT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="3"
+                    android:text="Abuse &amp; Harassment" />
+
+                <CheckBox
+                    android:id="@+id/lregCT4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="4"
+                    android:text="Civil Appeals" />
+
+                <CheckBox
+                    android:id="@+id/lregCT5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="5"
+                    android:text="Criminal Law" />
+
+                <CheckBox
+                    android:id="@+id/lregCT6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="CTCheck"
+                    android:tag="6"
+                    android:text="General Miscellaneous Matters" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regLreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="reg"
+                android:text="Register" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

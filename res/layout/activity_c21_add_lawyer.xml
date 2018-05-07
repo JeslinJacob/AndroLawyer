@@ -1,0 +1,178 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1ClientAddLawyer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/img_addlawyer_img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/lawyer" />
+
+        <TextView
+            android:id="@+id/txt_addlawyer_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Lawyer Details"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Cname_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Lawyer Name"
+            android:inputType="textPersonName"
+            android:singleLine="true" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2" >
+
+            <RadioButton
+                android:id="@+id/Cmale_addlawyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:onClick="GenderCheck"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/Cfemale_addlawyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="GenderCheck"
+                android:text="Female" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Cage_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Double Click to enter &quot;DOB&quot; "
+            android:onClick="mydate"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/imgADDRESS_addlawyer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/contact" />
+
+        <EditText
+            android:id="@+id/Cemail_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="e-Mail" />
+
+        <EditText
+            android:id="@+id/Cphone_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Chome_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Home Address" />
+
+        <EditText
+            android:id="@+id/Cplace_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Place" />
+
+        <EditText
+            android:id="@+id/Ccity_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/Cstate_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/Ccountry_addlawyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="Country" />
+
+        <ImageView
+            android:id="@+id/imgREG_addlawyer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:onClick="reg"
+            android:src="@drawable/ic_adcas1" />
+    </LinearLayout>
+
+</ScrollView>

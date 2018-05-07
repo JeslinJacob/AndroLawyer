@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <TextView
+        android:id="@+id/WelcometxtVw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Welcome to \n  Andro-Lawyer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2e597c"
+        android:textSize="29sp" />
+
+    <TextView
+        android:id="@+id/WelcometxtVw2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WelcometxtVw1"
+        android:layout_centerHorizontal="true"
+        android:text="Lawyer at your \n Finger-tips"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#3498db"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/WelcomeMAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="21dp"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="10dp"
+        android:text="Swipe to choose how you want to sign in... "
+        android:textColor="#917645"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/Welcomenxtprev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/WelcomeMAR"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="1"
+        android:src="@drawable/op_l" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Welcomenxtprev"
+        android:layout_below="@+id/WelcometxtVw2"
+        android:gravity="center" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/Welcomepager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/Welcomenxtprev"
+            android:layout_below="@+id/WelcometxtVw2" >
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

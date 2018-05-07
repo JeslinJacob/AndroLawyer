@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RLChat_lawyer"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="#EEEEEE" >
+
+    <LinearLayout
+        android:id="@+id/LL2Chat_lawyer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="#EEEEEE"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <EditText
+            android:id="@+id/edt_chat_msg_lawyer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:autoLink="all"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="type here.."
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="10"
+            android:minLines="1"
+            android:padding="4dp"
+            android:scrollbars="none"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="20sp" >
+
+            <requestFocus />
+        </EditText>
+        
+        <Button
+            android:id="@+id/bttn_refresh_lawyer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/recycle2"
+            android:onClick="refresh"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        
+        <Button
+            android:id="@+id/bttn_send_msg_lawyer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/send"
+            android:gravity="right"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ChatListView_lawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LL2Chat_lawyer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/default_wallpaper"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay" >
+
+    </ListView>
+
+</RelativeLayout>

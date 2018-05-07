@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androlawyer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="com.example.androlawyer.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.example.androlawyer.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Andro Lawyer"
+        android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" >
+        <activity
+            android:name=".Welcome_Main"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lawyer.LawyerPage" >
+            <intent-filter>
+                <action android:name="com.example.androlawyer.lawyer.LawyerPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".client.ClientPage" >
+            <intent-filter>
+                <action android:name="com.example.androlawyer.ClientPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlertDialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL1Case"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".lawyer.L11AddCase"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L12CaseDiary"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L12CaseDiary1List"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L12CaseDiary2View"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L13ViewAll"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L13ViewAllList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L14ReopenList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name=".lawyer.L15CaseCalendar" >
+        </activity>
+        <activity android:name=".lawyer.L15CaseCalendarList" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL2Client"
+            android:theme="@style/Floating"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L21AddClient"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L22ContactClient"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L22ContactClientList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L23EditClient"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L24ViewClient"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L24ViewClientList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL3Chat"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".lawyer.L31ChooseContact"
+            android:theme="@style/Floating"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L32ChatRecentList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L33ChatClientList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL4MapSearch"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL5Notification"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name=".lawyer.LawyerL4MapClient" >
+        </activity>
+        <activity android:name=".lawyer.L52Not1" >
+        </activity>
+        <activity android:name=".lawyer.L53Not2ClientRequests" >
+        </activity>
+        <activity android:name=".lawyer.L54Not3ClientApprovals" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerL6Complaint"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerLogin"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerReg"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.LawyerRegMap"
+            android:theme="@style/Floating" 
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientLogin"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientReg"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name=".client.ClientRegMap" >
+        </activity>
+        <activity android:name=".Welcome_IPConfig" >
+        </activity>
+        <activity
+            android:name=".Welcome_Settings_Lawyer"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".Welcome_Settings_Client"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".Welcome_Settings_Map"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".Welcome_About"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Welcome_Profile_Lawyer"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Welcome_Profile_Client"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDU7a3U8gm8ur9eNiMiBu9Y_XZ3pILJg54" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".client.ClientC1Case"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".client.C11AddCase"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C12AssignCase"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C12ChooseLawyerToAssign"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C13ViewAll"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C13ViewAllList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C14CaseDiaryList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C14CaseDiaryView"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity android:name=".client.C15CaseCalendar" >
+        </activity>
+        <activity android:name=".client.C15CaseCalendarList" >
+        </activity>
+        <activity
+            android:name=".client.C21AddLawyer"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C22ViewLawyer"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C22ViewLawyerList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C23ContactLawyerList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C23ContactLawyer"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C24ViewLawyerList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientC2Lawyer"
+            android:theme="@style/Floating"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientC3Chat"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C31ChooseContact"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".client.C32ChatRecentList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C33ChatLawyerList"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.C41ChooseCaseType"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity android:name=".client.ClientC4MapSearch" >
+        </activity>
+        <activity
+            android:name=".client.ClientC4MapLawyer"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientC5Notification"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".client.ClientC6Complaint"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".lawyer.L51ChooseNotification"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity
+            android:name=".client.C51ChooseNotification"
+            android:label="@string/title_activity_c51_choose_notification"
+            android:theme="@style/Floating" >
+        </activity>
+        <activity android:name=".client.C52Not1Notifications" >
+        </activity>
+        <activity android:name=".client.C53Not2LawyerRequests" >
+        </activity>
+        <activity android:name=".client.C54Not3LawyerApprovals" >
+        </activity>
+        <activity android:name=".Welcome_FragmentOne" >
+        </activity>
+        <activity android:name=".Welcome_FragmentTwo" >
+        </activity>
+        <activity
+            android:name=".client.C24Rating"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.androlawyer.client.MarkerWindowClient"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+                <activity
+            android:name="com.example.androlawyer.lawyer.MarkerWindowLawyer"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

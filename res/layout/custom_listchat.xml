@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/LLChatListMARGIN"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LLChatListLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@drawable/border"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/clistdatetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:fadingEdge="horizontal|vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Wikipedia Content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2F972F"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/clistdesctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fadingEdge="horizontal|vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="On November 2009, a researcher at the Rey Juan Carlos University in Madrid (Spain) found that the English Wikipedia had lost 49,000 editors during the first three months of 2009; in comparison, the project lost only 4,900 editors during the same period in 2008.[40][41] The Wall Street Journal cited the array of rules applied to editing and disputes related to such content among the reasons for this trend."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

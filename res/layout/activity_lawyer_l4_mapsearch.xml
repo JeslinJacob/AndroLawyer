@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RLMapSearchlawyer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:clickable="false"
+    tools:context=".client.C12AssignCase" >
+
+    <fragment
+        android:id="@+id/lawyermaplawyer"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txtAddresslawyer"
+        android:layout_below="@+id/edtSearchlawyer"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp" />
+
+    <EditText
+        android:id="@+id/edtSearchlawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bttnSearchlawyer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/bttnSearchlawyer"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="enter any place..."
+        android:padding="5dp"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/txtAddresslawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#03A9F4"
+        android:paddingLeft="4dp"
+        android:text="Latitude And Longitude..."
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/bttnSearchlawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:alpha="0.7"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:text="Search"
+        android:textColor="@android:color/background_dark"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/txtLTlawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtLGlawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtFAddrlawyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bttnConfirmlawyer"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/lawyermaplawyer"
+        android:layout_alignLeft="@+id/lawyermaplawyer"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="4dp"
+        android:alpha="0.6"
+        android:text="Confirm Client"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/PREVMAPlawyer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/lawyermaplawyer"
+        android:layout_alignTop="@+id/NEXTMAPlawyer"
+        android:alpha="0.7"
+        android:background="@drawable/border"
+        android:onClick="PREV"
+        android:src="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/NEXTMAPlawyer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/lawyermaplawyer"
+        android:layout_centerVertical="true"
+        android:alpha="0.7"
+        android:background="@drawable/border"
+        android:onClick="NEXT"
+        android:src="@drawable/next" />
+
+</RelativeLayout>

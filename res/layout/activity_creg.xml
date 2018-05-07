@@ -1,0 +1,303 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1Creg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:id="@+id/imgCreg"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/cnt1" />
+
+                <TextView
+                    android:id="@+id/txtCreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Client Registration"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPDCreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:text="Personal Details"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/CnameCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:singleLine="true"
+                    android:textColorHint="#000000" >
+
+					 </EditText>
+
+                <EditText
+                    android:id="@+id/CDOBCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="Double Click to enter &quot;DOB&quot; "
+                    android:onClick="mydate"
+                    android:singleLine="true"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/CUserCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Username"
+                    android:singleLine="true"
+                    android:textColorHint="#000000" >
+
+                </EditText>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/CPassCreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:singleLine="true"
+                android:hint="Password"
+                android:inputType="textVisiblePassword"
+                android:textColorHint="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="GenderCheck"
+                android:weightSum="2" >
+
+                <RadioButton
+                    android:id="@+id/CGenderMCreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="GenderCheck"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/CGenderFCreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:onClick="GenderCheck"
+                    android:text="Female" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3" >
+
+                <ImageView
+                    android:id="@+id/imgAddressCreg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic1_addr" />
+
+                <EditText
+                    android:id="@+id/DdateCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Home / office Address"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/placeCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Place"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/cityCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="City"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/stateCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="State"
+                    android:textColorHint="#000000" />
+
+                <EditText
+                    android:id="@+id/countryCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Country"
+                    android:textColorHint="#000000" />
+
+                <TextView
+                    android:id="@+id/txtPLOTCreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/locxy"
+                    android:gravity="center_vertical"
+                    android:onClick="MAP"
+                    android:text="  Click here to Plot your location On map"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColorHint="#000000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/lblLATCreg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Latitude:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/txtLATCreg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Click above..."
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:weightSum="2" >
+
+                    <TextView
+                        android:id="@+id/lblLNGCreg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Longitude:"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/txtLNGCreg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Click above..."
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgContactCreg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contact" />
+
+                <EditText
+                    android:id="@+id/CEmailCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColorHint="#000000"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/CPhnCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000000"
+                    android:layout_margin="10dp"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:hint="Phone Number"
+                    android:inputType="phone" />
+
+                <Button
+                    android:id="@+id/regCreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:onClick="reg"
+                    android:text="Register" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
